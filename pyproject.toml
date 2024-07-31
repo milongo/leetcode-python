@@ -31,6 +31,7 @@ branch = true
 
 [tool.coverage.report]
 fail_under = 100
+skip_empty = true
 
 [tool.pyright]
 include = ["src"]
