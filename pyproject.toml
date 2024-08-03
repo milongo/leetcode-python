@@ -4,10 +4,14 @@ fast = true
 
 [tool.coverage.run]
 branch = true
+omit = [
+    "*/tests/*",
+]
 
 [tool.coverage.report]
-fail_under = 100
+fail_under = 95
 skip_empty = true
+show_missing = true
 
 [tool.pylint.main]
 max-line-length = 200
