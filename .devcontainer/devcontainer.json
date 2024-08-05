@@ -23,21 +23,22 @@
 				"oderwat.indent-rainbow"
 			],
 			"settings": {
-				"[editor]": {
-					"formatOnSave": true,
-					"formatOnPaste": true
-				},
+				"editor.formatOnSave": false,
 				"files.trimTrailingWhitespace": true,
 				"git.autofetch": true,
-				"[jsonc]": {
-					"editor.defaultFormatter": "vscode.json-language-features"
-				},
 				"[python]": {
 					"defaultInterpreterPath": "/opt/conda/bin/python",
 					"editor.defaultFormatter": "ms-python.black-formatter",
 					"testing.unittestEnabled": false,
-					"testing.pytestEnabled": true
+					"testing.pytestEnabled": true,
+					"testing.pytestArgs": [
+						"--cov=.",
+						"--cov-report=term-missing",
+						"--no-cov"
+					]
 				},
+				"python.analysis.typeCheckingMode": "basic",
+				"python.analysis.inlayHints.functionReturnTypes": true,
 				// Double check args
 				"pylint.args": [
 					"--rcfile=pyproject.toml"
