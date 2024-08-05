@@ -1,5 +1,5 @@
 [tool.black]
-line-length = 200
+line-length = 90
 fast = true
 
 [tool.coverage.run]
@@ -14,4 +14,4 @@ skip_empty = true
 show_missing = true
 
 [tool.pylint.main]
-max-line-length = 200
+max-line-length = 90
