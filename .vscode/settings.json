@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestArgs": [
+        "--cov=.",
+        "--cov-report=term-missing",
+        // "--no-cov"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
