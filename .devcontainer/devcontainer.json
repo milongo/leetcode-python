@@ -39,7 +39,6 @@
 				},
 				"python.analysis.typeCheckingMode": "basic",
 				"python.analysis.inlayHints.functionReturnTypes": true,
-				// Double check args
 				"pylint.args": [
 					"--rcfile=pyproject.toml"
 				],
